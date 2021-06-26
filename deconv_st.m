@@ -1,8 +1,8 @@
 function [E, H] = deconv_st(Y,M,sa,max_iter)
 
 % Spatially variant variational Bayesian blind image deconvolution with Students T prior
-% M:        Color stain matrix (values in OD space)
-% Y:        Stained RGB image (values [0,1])
+% M:        Color stain matrix (values in OD space) (3 x 2)
+% Y:        Stained RGB image (values [0,1]) (sa x sa x 3)
 % sa:       Image width/height
 % max_iter: Maximum number of iterations of the Variational EM
 
